@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREEN VIBES - Магазин растений</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">GREEN VIBES</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">О нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#catalog">Каталог</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#newsletter">Рассылка</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacts">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-4">GREEN VIBES</h1>
+            <p class="lead mb-4">Превратите ваш дом в оазис уюта</p>
+            <a href="#catalog" class="btn btn-success btn-lg">В каталог</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="section-title">О нашем магазине</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <p class="text-center lead">Green Vibes — это не просто магазин, а сообщество любителей зелени, где каждый найдет растение по душе. Мы тщательно отбираем здоровые и стильные компактные растения, чтобы ваш дом стал оазисом уюта.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section id="catalog" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Каталог</h2>
+            
+            <!-- Tabs Navigation -->
+            <ul class="nav nav-tabs justify-content-center mb-4" id="plantTabs">
+                <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="tab" href="#popular">Популярные</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#new">Новинки</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#sale">Акции</a>
+                </li>
+            </ul>
+
+            <!-- Tabs Content -->
+            <div class="tab-content" id="plantTabsContent">
+                <!-- Popular Plants Tab -->
+                <div class="tab-pane fade show active" id="popular">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card plant-card">
+                                <img src="images/rastenie-monstera-v-cernom-gorske.jpg" class="card-img-top" alt="Алоказия">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Алоказия</h5>
+                                    <p class="card-text text-success fw-bold">600 руб / шт</p>
+                                    <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#plantModal">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card plant-card">
+                                <img src="images/алоэ.png" class="card-img-top" alt="Замиокулькас">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Замиокулькас</h5>
+                                    <p class="card-text text-success fw-bold">700 руб / шт</p>
+                                    <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#plantModal">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card plant-card">
+                                <img src="images/о магазине.png" class="card-img-top" alt="Алоэ Вера">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Алоэ Вера</h5>
+                                    <p class="card-text text-success fw-bold">500 руб / шт</p>
+                                    <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#plantModal">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New Plants Tab -->
+                <div class="tab-pane fade" id="new">
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="text-center">Скоро появятся новые растения!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sale Plants Tab -->
+                <div class="tab-pane fade" id="sale">
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="text-center">Следите за акциями в нашей рассылке!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <button class="btn btn-success btn-lg">ВЕСЬ КАТАЛОГ</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carousel Section -->
+    <section class="py-5">
+        <div class="container">
+            <h3 class="section-title">Обновление каталога растений каждую неделю</h3>
+            <div id="plantsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8 text-center">
+                                <p class="lead">Подпишитесь на рассылку о новинках, чтобы не пропустить поступления новых растений, а также узнавать об акциях в магазине.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8 text-center">
+                                <p class="lead">Получайте информацию о скидках и специальных предложениях первыми!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#plantsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#plantsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="newsletter-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title">Подпишитесь на рассылку</h2>
+                    <form id="newsletterForm" class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Имя</label>
+                            <input type="text" class="form-control" id="name" required>
+                            <div class="invalid-feedback">Пожалуйста, введите ваше имя.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Эл. почта</label>
+                            <input type="email" class="form-control" id="email" required>
+                            <div class="invalid-feedback">Пожалуйста, введите корректный email.</div>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="agreement" required>
+                            <label class="form-check-label" for="agreement">
+                                Согласие на обработку персональных данных для использования компьютерных данных (включая программный интернет-автоматический процесс)
+                            </label>
+                            <div class="invalid-feedback">Необходимо ваше согласие.</div>
+                        </div>
+                        <button type="submit" class="btn btn-success btn-lg w-100">ПОДПИСАТЬСЯ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accordion FAQ Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">Часто задаваемые вопросы</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            Как ухаживать за растениями?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Каждое растение требует индивидуального подхода. Мы предоставляем подробные инструкции по уходу при покупке.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                            Есть ли доставка?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Да, мы осуществляем доставку по Москве и области.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                            Можно ли вернуть растение?
+                        </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Да, в течение 7 дней при наличии чека и сохранении товарного вида растения.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts Section -->
+    <section id="contacts" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Контакты</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <p><i class="bi bi-geo-alt-fill"></i> ул. Зеленая, 35, Москва</p>
+                    <p><i class="bi bi-telephone-fill"></i> +7 (999) 163-95-67</p>
+                    <div class="mt-4">
+                        <a href="#" class="btn btn-outline-success me-2">ГЛАВНАЯ</a>
+                        <a href="#about" class="btn btn-outline-success me-2">О НАС</a>
+                        <a href="#catalog" class="btn btn-outline-success me-2">МЕНЮ</a>
+                        <a href="#contacts" class="btn btn-outline-success">КОНТАКТЫ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2024 GREEN VIBES. Все права защищены.</p>
+            <div class="mt-3">
+                <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-white me-3"><i class="bi bi-telegram"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-vk"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Plant Modal -->
+    <div class="modal fade" id="plantModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Информация о растении</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Подробная информация о растении появится здесь.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

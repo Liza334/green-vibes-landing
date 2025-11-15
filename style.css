@@ -1,0 +1,254 @@
+/* Custom Styles for Green Vibes Landing Page */
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    padding: 200px 0 150px;
+    text-align: center;
+    margin-top: 56px; /* Compensate for fixed navbar */
+}
+
+/* Plant Cards */
+.plant-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.plant-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.plant-card .card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+    background: linear-gradient(135deg, #198754 0%, #146c43 100%);
+    color: white;
+    padding: 80px 0;
+}
+
+.newsletter-section .section-title {
+    color: white;
+}
+
+.newsletter-section .form-control {
+    border: none;
+    border-radius: 8px;
+    padding: 12px 15px;
+}
+
+.newsletter-section .form-check-label {
+    font-size: 0.9rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #2c5530;
+    color: white;
+    padding: 40px 0 20px;
+}
+
+.footer a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #20c997 !important;
+}
+
+/* Navigation */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #20c997 !important;
+}
+
+/* Section Titles */
+.section-title {
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: #198754;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #198754;
+    margin: 15px auto 0;
+}
+
+/* Tabs */
+.nav-tabs .nav-link {
+    color: #495057;
+    font-weight: 500;
+    border: none;
+    padding: 12px 25px;
+}
+
+.nav-tabs .nav-link.active {
+    color: #198754;
+    background-color: transparent;
+    border-bottom: 3px solid #198754;
+}
+
+.nav-tabs .nav-link:hover {
+    color: #198754;
+    border-bottom: 3px solid #198754;
+}
+
+/* Carousel */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #198754;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+/* Accordion */
+.accordion-button {
+    font-weight: 500;
+    color: #198754;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: rgba(25, 135, 84, 0.1);
+    color: #198754;
+}
+
+.accordion-button:focus {
+    border-color: #198754;
+    box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+}
+
+/* Buttons */
+.btn-success {
+    background-color: #198754;
+    border-color: #198754;
+    transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #146c43;
+    border-color: #146c43;
+    transform: translateY(-2px);
+}
+
+.btn-outline-success {
+    color: #198754;
+    border-color: #198754;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-success:hover {
+    background-color: #198754;
+    border-color: #198754;
+    transform: translateY(-2px);
+}
+
+/* Form Validation */
+.was-validated .form-control:valid {
+    border-color: #198754;
+}
+
+.was-validated .form-control:invalid {
+    border-color: #dc3545;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 150px 0 100px;
+        background-attachment: scroll;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .plant-card {
+        margin-bottom: 30px;
+    }
+    
+    .nav-tabs .nav-link {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        padding: 120px 0 80px;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .btn-lg {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #198754;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.back-to-top:hover {
+    background-color: #146c43;
+    color: white;
+    transform: translateY(-3px);
+}
